@@ -17,6 +17,7 @@ public class SolveMaze {
      */
 
     public static void main(final String[] unused) {
+
         /*
          * Create a new 10 x 10 maze. Feel free to change these values.
          */
@@ -34,6 +35,15 @@ public class SolveMaze {
          * Feel free to adjust this number if you experiment with other mazes.
          */
         for (int step = 0; step < 1000; step++) {
+            while (maze.isFinished() == false) {
+                maze.move();
+                if (maze.canMove() == false) {
+                    maze.turnRight();
+                } else {
+                    maze.turnLeft();
+                }
+            }
+
             // Implement your maze solving algorithm here
         }
 
