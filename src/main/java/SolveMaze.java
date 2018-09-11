@@ -44,7 +44,7 @@ public class SolveMaze {
                 }
             }
 
-            // Implement your maze solving algorithm here
+            // Implement your maze solving algorithm here.
         }
 
         if (maze.isFinished()) {
